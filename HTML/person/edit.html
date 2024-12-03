@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Edit Person</title>
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../assets/css/styles.css" />
+    <script src="../assets/js/jquery-3.4.1.min.js"></script>
+    <script src="../assets/js/popper.min.js"></script>
+    <script src="../assets/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <div class="navbar px-5">
+      <div class="nav-logo">Library Management System</div>
+      <div>
+        <div class="btn-group">
+          <button type="button" class="btn text-left" data-toggle="dropdown">
+            Student
+          </button>
+          <div class="dropdown-menu">
+            <a
+              class="dropdown-item"
+              href="/HTML/person/list.html"
+              >List All</a
+            >
+            <a
+              class="dropdown-item"
+              href="/library-management-system/person/new.jsp"
+              >Add Student</a
+            >
+            <div class="dropdown-divider"></div>
+
+            <h6 class="dropdown-header">Reader</h6>
+            <a class="dropdown-item" href="/library-management-system/#"
+              >List Readers</a
+            >
+            <a class="dropdown-item" href="/library-management-system/#"
+              >Add Reader</a
+            >
+            <div class="dropdown-divider"></div>
+
+            <h6 class="dropdown-header">Author</h6>
+            <a class="dropdown-item" href="/library-management-system/#"
+              >List Authors</a
+            >
+            <a class="dropdown-item" href="/library-management-system/#"
+              >Add Author</a
+            >
+          </div>
+        </div>
+
+        <div class="btn-group">
+          <button
+            type="button"
+            class="btn nav-btn text-left"
+            data-toggle="dropdown">
+            Publishers
+          </button>
+          <div class="dropdown-menu">
+            <a
+              class="dropdown-item"
+              href="/library-management-system/publisher/list.jsp"
+              >List Publishers</a
+            >
+            <a
+              class="dropdown-item"
+              href="/library-management-system/publisher/new.jsp"
+              >Add Publisher</a
+            >
+          </div>
+        </div>
+
+        <div class="btn-group">
+          <button
+            type="button"
+            class="btn nav-btn text-left"
+            data-toggle="dropdown">
+            Books
+          </button>
+          <div class="dropdown-menu">
+            <a
+              class="dropdown-item"
+              href="/library-management-system/book/list.jsp"
+              >List Books</a
+            >
+            <a
+              class="dropdown-item"
+              href="/library-management-system/book/new.jsp"
+              >Add Book</a
+            >
+          </div>
+        </div>
+
+        <div class="btn-group">
+          <button
+            type="button"
+            class="btn nav-btn text-left"
+            data-toggle="dropdown">
+            Borrowing
+          </button>
+          <div class="dropdown-menu">
+            <a
+              class="dropdown-item"
+              href="/library-management-system/book-request/list.jsp"
+              >List Requests</a
+            >
+            <a
+              class="dropdown-item"
+              href="/library-management-system/book-request/new.jsp"
+              >Add Request</a
+            >
+          </div>
+        </div>
+
+        <div class="btn-group">
+          <button
+            type="button"
+            class="btn nav-btn text-left"
+            data-toggle="dropdown">
+            Genre
+          </button>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="/library-management-system/#"
+              >List Genres</a
+            >
+            <a class="dropdown-item" href="/library-management-system/#"
+              >Add Genre</a
+            >
+          </div>
+        </div>
+
+        <div class="btn-group">
+          <button
+            type="button"
+            class="btn nav-btn text-left"
+            data-toggle="dropdown">
+            Address
+          </button>
+          <div class="dropdown-menu">
+            <h6 class="dropdown-header">Country</h6>
+            <a class="dropdown-item" href="/library-management-system/#"
+              >List Countries</a
+            >
+            <a class="dropdown-item" href="/library-management-system/#"
+              >Add Country</a
+            >
+
+            <h6 class="dropdown-header">Province</h6>
+            <a class="dropdown-item" href="/library-management-system/#"
+              >List Provinces</a
+            >
+            <a class="dropdown-item" href="/library-management-system/#"
+              >Add Province</a
+            >
+            <div class="dropdown-divider"></div>
+
+            <h6 class="dropdown-header">Municipality</h6>
+            <a class="dropdown-item" href="/library-management-system/#"
+              >List Municipalities</a
+            >
+            <a class="dropdown-item" href="/library-management-system/#"
+              >Add Municipality</a
+            >
+            <div class="dropdown-divider"></div>
+
+            <h6 class="dropdown-header">Commune</h6>
+            <a class="dropdown-item" href="/library-management-system/#"
+              >List Communes</a
+            >
+            <a class="dropdown-item" href="/library-management-system/#"
+              >Add Commune</a
+            >
+            <div class="dropdown-divider"></div>
+          </div>
+        </div>
+
+        <div class="btn-group">
+          <button type="button" class="btn text-left" data-toggle="dropdown">
+            Book (Attributes)
+          </button>
+          <div class="dropdown-menu">
+            <h6 class="dropdown-header">Category</h6>
+            <a class="dropdown-item" href="/library-management-system/#"
+              >List Categories</a
+            >
+            <a class="dropdown-item" href="/library-management-system/#"
+              >Add Categories</a
+            >
+
+            <h6 class="dropdown-header">Status</h6>
+            <a class="dropdown-item" href="/library-management-system/#"
+              >List Statuses</a
+            >
+            <a class="dropdown-item" href="/library-management-system/#"
+              >Add Status</a
+            >
+            <div class="dropdown-divider"></div>
+
+            <h6 class="dropdown-header">Classification</h6>
+            <a class="dropdown-item" href="/library-management-system/#"
+              >List Classifications</a
+            >
+            <a class="dropdown-item" href="/library-management-system/#"
+              >Add Classification</a
+            >
+            <div class="dropdown-divider"></div>
+
+            <h6 class="dropdown-header">Descriptors</h6>
+            <a class="dropdown-item" href="/library-management-system/#"
+              >List Descriptors</a
+            >
+            <a class="dropdown-item" href="/library-management-system/#"
+              >Add Descriptors</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="list-container">
+      <a href="list.html" class="h-btn text-center m-4"> Back</a>
+
+      <div
+        class="h-100 container d-flex justify-content-center align-items-start">
+        <div class="card px-5 py-3" style="width: 100%">
+          <h5 class="text-center mb-3">Edit Person</h5>
+
+          <form
+            class="form-container"
+            method="POST"
+            action="/person-servlet?edit=true&personId=1&addressId=101&phone1Id=201&email1Id=301">
+            <input name="phone2Id" style="opacity: 0" value="202" />
+            <input name="email2Id" style="opacity: 0" value="302" />
+
+            <div class="row">
+              <div class="form-group col-4">
+                <label for="personType" class="required">Role</label>
+                <select
+                  id="personType"
+                  name="personType"
+                  class="form-control"
+                  disabled>
+                  <option>Select the person's role</option>
+                  <option value="AUTHOR" selected>1 - Author</option>
+                  <option value="READER">2 - Reader</option>
+                </select>
+              </div>
+              <div class="form-group col-4">
+                <label for="name" class="required">First Name</label>
+                <input
+                  name="name"
+                  id="name"
+                  value="John"
+                  type="text"
+                  class="form-control"
+                  required />
+              </div>
+              <div class="form-group col-4">
+                <label for="surname" class="required">Last Name</label>
+                <input
+                  name="surname"
+                  id="surname"
+                  value="Doe"
+                  type="text"
+                  class="form-control"
+                  required />
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="form-group col-4">
+                <label for="bi" class="required">ID</label>
+                <input
+                  name="bi"
+                  id="bi"
+                  value="12345678"
+                  type="text"
+                  class="form-control"
+                  required />
+              </div>
+              <div class="form-group col-4">
+                <label for="birthDate" class="required">Date of Birth</label>
+                <input
+                  name="birthDate"
+                  id="birthDate"
+                  type="date"
+                  value="1990-01-01"
+                  class="form-control"
+                  required />
+              </div>
+              <div class="form-group col-4">
+                <label for="gender" class="required">Gender</label>
+                <select id="gender" name="gender" class="form-control">
+                  <option value="1" selected>Male</option>
+                  <option value="2">Female</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="form-group col-4">
+                <label for="phone1" class="required">Primary Phone</label>
+                <input
+                  name="phone1"
+                  id="phone1"
+                  type="tel"
+                  value="555-1234"
+                  class="form-control"
+                  required />
+              </div>
+              <div class="form-group col-4">
+                <label for="phone2">Secondary Phone (optional)</label>
+                <input
+                  name="phone2"
+                  id="phone2"
+                  type="tel"
+                  value="555-5678"
+                  class="form-control" />
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="form-group col-4">
+                <label for="email1" class="required">Primary Email</label>
+                <input
+                  name="email1"
+                  id="email1"
+                  type="email"
+                  value="john.doe@example.com"
+                  class="form-control"
+                  required />
+              </div>
+              <div class="form-group col-4">
+                <label for="email2">Secondary Email (optional)</label>
+                <input
+                  name="email2"
+                  id="email2"
+                  type="email"
+                  value="johndoe.alt@example.com"
+                  class="form-control" />
+              </div>
+            </div>
+
+            <p class="h5 my-2 text-center text-muted">Address</p>
+
+            <div class="row">
+              <div class="form-group col-3">
+                <label for="commune" class="required">Commune</label>
+                <select id="commune" name="commune" class="form-control">
+                  <option value="1" selected>Commune 1</option>
+                  <option value="2">Commune 2</option>
+                </select>
+              </div>
+              <div class="form-group col-3">
+                <label for="district">District</label>
+                <input
+                  name="district"
+                  id="district"
+                  type="text"
+                  value="Downtown"
+                  class="form-control" />
+              </div>
+              <div class="form-group col-3">
+                <label for="street">Street</label>
+                <input
+                  name="street"
+                  id="street"
+                  type="text"
+                  value="Main St"
+                  class="form-control" />
+              </div>
+              <div class="form-group col-3">
+                <label for="houseNum">House Number</label>
+                <input
+                  name="houseNum"
+                  id="houseNum"
+                  type="number"
+                  value="101"
+                  class="form-control" />
+              </div>
+            </div>
+
+            <button type="submit" class="btn btn-primary my-2 float-right">
+              √ Confirm
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
